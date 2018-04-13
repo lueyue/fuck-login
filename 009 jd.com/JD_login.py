@@ -1,28 +1,4 @@
-# -*- coding:utf-8 -*-
-'''
-Required
-- requests
-- bs4
-Info
-- author : "huangfs"
-- email : "huangfs@bupt.edu.cn"
-- date : "2016.4.13"
-'''
-import requests
-from bs4 import BeautifulSoup
-import time
-
-try:
-    input = raw_input
-except:
-    pass
-
-class JDlogin(object):
-    def __init__(self,un,pw):
-        self.headers = {'User-Agent':"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
-                        'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                        'Accept-Encoding':'gzip, deflate, sdch',
-                        'Accept-Language':'zh-CN,zh;q=0.8',
+# -*- codq=0.8',
                         'Connection':'keep-alive',
                         }
         self.session = requests.session()
